@@ -92,18 +92,18 @@ nav .icon {
 
     }
 
-    nav ul a {
+    nav ul li a {
         color: #99cd32;
     }
 
-    a.active {
+    nav ul li a.active {
         border: none;
     }
 
-    a:hover {
+    nav ul li a:hover {
         border: none;
-        border-bottom: 1px double yellowgreen ;
-        margin-left: 20px;
+        border-bottom: 3px double yellowgreen ;
+        /* margin-left: 20px; */
         border-radius: 0;
     }
 }
