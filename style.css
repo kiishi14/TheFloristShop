@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: darkgreen;
+    width: 100%;
+}
+
+label.logo {
+    font-size: 35px;
+    color: white;
+    line-height: 80px;
+    margin-left: 30px
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+nav li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 7px 10px;
+}
+
+a.active, a:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav .icon {
+    color: white;
+    float: right;
+    font-size: 30px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+@media (max-width: 990px){
+    /* nav {
+        border-bottom: 1px solid yellowgreen;
+    } */
+    nav .icon {
+        display: block;
+        /* margin-right: 25px; */
+    }
+
+    nav ul {
+        background: #006400;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        padding: 50px;
+        transition: all .5s ease-in;
+    }
+
+    nav ul li {
+        text-align: center;
+        display: block;
+        line-height: 80px;
+
+    }
+
+    nav ul a {
+        color: #99cd32;
+    }
+
+    a.active {
+        border: none;
+    }
+
+    a:hover {
+        border: none;
+        border-bottom: 1px double yellowgreen ;
+        margin-left: 20px;
+        border-radius: 0;
+    }
+}
+
+nav ul.show {
+    left: 0;
+}
+
+section {
+    background: url(greenFlower.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
