@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 1;
 }
 
 nav{
@@ -77,6 +78,7 @@ nav .icon {
         left: -100%;
         padding: 50px;
         transition: all .5s ease-in;
+        z-index: 3;
     }
 
     nav ul li {
