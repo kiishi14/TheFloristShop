@@ -59,9 +59,10 @@ nav .icon {
 }
 
 @media (max-width: 990px){
-    /* nav {
-        border-bottom: 1px solid yellowgreen;
-    } */
+    label.logo {
+        font-size: 30px;
+        margin-left: 20px;
+    }
     nav .icon {
         display: block;
         /* margin-right: 25px; */
