@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.section1 {
+    background: url(../images/blueFlower.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-header {
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    position: fixed;
+    width: 100%;
+}
+
+.m-header {
+    color: burlywood;
+}
+.sidebar-toggle{
+    font-size: 2rem;
+    color: burlywood;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: burlywood;
+    width: 50%;
+    padding: 20px ;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.sidebar-header h3 {
+    color: #214778;
+    font-size: 1.5rem;
+}
+
+.sidebar-close-toggle {
+    color: #214778;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.sidebar-close-toggle:hover {
+    scale: 1.2;
+    color: red;
+}
+
+.sidebar-menu {
+    margin-top: 20px;
+
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+    display: block;
+}
+
+.sidebar-menu li a {
+    color: #214778;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    transition: .5s;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #214778;
+    color: #fff;
+}
+
+.sidebar-menu li a.active {
+    background-color: #214778;
+    color: #fff;
+}
+
+@media (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+}
+
+@media (max-width: 426px) {
+   .main-header{
+    padding: 0 1rem;
+   }
+}
