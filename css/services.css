@@ -22,7 +22,7 @@ nav .logo {
     font-size: 1.5rem;
 }
 
-nav .toggle {
+nav #nav-toggle {
     font-size: 1.5rem;
 }
 
@@ -48,7 +48,7 @@ nav .links {
     transition: all .5s ease-in-out;
 }
 
-.show-links {
+nav ul.show-links {
     height: 10rem;
 }
 
@@ -81,14 +81,16 @@ nav .links {
         padding: 0;
         margin: 0 0.5rem;
         color: white;
-        transition: none;
-        font-size: 1.5rem;
+        transition: all 0s none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
     }
 
     nav .links a:hover{
         background-color: transparent;
         padding: 0;
-        margin-left: 0;
+        margin: 0;
+        transition: none;
     }
 
     nav {
