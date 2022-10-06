@@ -28,3 +28,16 @@ questionBtns.forEach(function (btn) {
     question.classList.toggle("show-answer");
   });
 });
+
+// SECONF OPTION BUT I HAVE TO CLICK ON IT TWICE
+// questionBtns.forEach(function (btn) {
+//   btn.addEventListener("click", function (item) {
+//     const questions = document.querySelectorAll(".question-answer");
+//     questions.forEach(function (question) {
+//       question.addEventListener("click", function (item) {
+//         const open = item.currentTarget;
+//         open.classList.toggle("show-answer");
+//       });
+//     });
+//   });
+// });
